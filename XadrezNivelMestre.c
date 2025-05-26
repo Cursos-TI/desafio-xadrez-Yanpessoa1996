@@ -30,23 +30,23 @@ int main() {
     const int torre_mov = 5;
     const int rainha_mov = 8;
 
-    printf("Movimentação Bispo:\n");
+    printf("\033[34mMovimentação Bispo:\n\033[0m");
     moverBispo(bispo_mov);
     printf("\n");
 
-    printf("Movimentação Torre:\n");
+    printf("\033[34mMovimentação Torre:\n\033[0m");
     moverTorre(torre_mov);
     printf("\n");
 
-    printf("Movimentação Rainha:\n");
+    printf("\033[34mMovimentação Rainha:\n\033[0m");
     moverRainha(rainha_mov);
     printf("\n");
 
     // Movimentação do Cavalo com loops aninhados, múltiplas condições, break e continue
-    printf("Movimentação Cavalo:\n");
+    printf("\033[34mMovimentação Cavalo:\n\033[0m");
 
     const int mov_baixo = 2;  // Primeiro movimento de duas casas
-    const int mov_esquerda = 1; // Primeiro movimento de uma casa 
+    const int mov_esquerda = 1; // Sugundo movimento de uma casa 
 
     for (int i = 0; i < mov_baixo; i++) {
         printf("Baixo\n");
